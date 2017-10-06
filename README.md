@@ -109,12 +109,13 @@ Whenever a function calls itself, creating a loop.
 1) Countdown
 
 ```javascript
-const count = num => {
+const countdown = num => {
   console.log(num)
   num < 1
   ? num
-  : count(num - 1)
+  : countdown(num - 1)
 }
+
 countdown(5);
 /*
 5
