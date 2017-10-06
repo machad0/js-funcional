@@ -104,11 +104,11 @@ Sempre que uma função chama a si mesmo, criando um loop.
 1) Função de contagem regressiva
 
 ```javascript
-const count = num => {
+const countdown = num => {
   console.log(num)
   num < 1
   ? num
-  : count(num - 1)
+  : countdown(num - 1)
 }
 
 countdown(5);

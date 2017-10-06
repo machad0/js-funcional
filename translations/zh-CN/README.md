@@ -110,11 +110,11 @@ totalGrades
 1) 递减
 
 ```javascript
-const count = num => {
+const countdown = num => {
   console.log(num)
   num < 1
   ? num
-  : count(num - 1)
+  : countdown(num - 1)
 }
 
 countdown(5);
