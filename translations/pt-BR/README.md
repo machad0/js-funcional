@@ -104,11 +104,11 @@ Sempre que uma função chama a si mesmo, criando um loop.
 1) Função de contagem regressiva
 
 ```javascript
-const countdown = num => {
-    if (num > 0) {
-        console.log(num);
-        countdown(num - 1);
-    }
+const count = num => {
+  console.log(num)
+  num < 1
+  ? num
+  : count(num - 1)
 }
 
 countdown(5);
@@ -118,19 +118,17 @@ countdown(5);
 3
 2
 1
+0
 */
 ```
 
 2) Calculando uma fatorial
 
 ```javascript
-const factorial = num => {
-    if (num <= 0) {
-        return 1;
-    } else {
-        return (num * factorial(num - 1));
-    }
-}
+const factorial = (num) =>
+  num <= 0
+  ? 1
+  : n * factorial(num - 1)
 
 factorial(5);
 //120

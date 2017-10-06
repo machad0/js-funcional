@@ -116,6 +116,7 @@ const count = num => {
   ? num
   : count(num - 1)
 }
+
 countdown(5);
 /*
 5
